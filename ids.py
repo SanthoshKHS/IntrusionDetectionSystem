@@ -25,7 +25,6 @@ prediction_counts = defaultdict(int)
 prediction_history = defaultdict(lambda: deque(maxlen=20)) 
 
 def initialize_data():
-    """Initialize with default data for charts"""
     prediction_counts["Benign"] = 0
     prediction_counts["DoS"] = 0
     prediction_counts["Port Scan"] = 0
